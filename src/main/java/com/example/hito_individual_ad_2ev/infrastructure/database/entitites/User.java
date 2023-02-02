@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 //import org.springframework.security.core.authority.SimpleGrantedAuthority;
 //import org.springframework.security.core.userdetails.UserDetails;
 
+import java.io.Serial;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -23,6 +24,8 @@ import java.util.Set;
 @Entity
 @Table(name = "user")
 public class User implements UserDetails {
+    @Serial
+    private static final long serialVersionUID = 4740354443699664604L;
     @ToString.Include
     @Id
     @Column(name = "email", nullable = false, length = 500)

@@ -36,4 +36,7 @@ public class Task {
     @Column(name = "end_at", nullable = false)
     private LocalDate endAt;
 
+    @Column(name = "status", length = 500)
+    private String status;
+
 }
