@@ -8,4 +8,5 @@ import org.springframework.stereotype.Service;
 public interface TaskDbOperator {
 
     String changeTaskStatus(TaskStatusRequest taskDto);
+    String createTask(TaskDto task);
 }

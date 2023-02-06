@@ -39,4 +39,12 @@ public class Task {
     @Column(name = "status", length = 500)
     private String status;
 
+
+    public Task(User user, String description, LocalDate createdAt, LocalDate endAt, String status) {
+        this.user = user;
+        this.description = description;
+        this.createdAt = createdAt;
+        this.endAt = endAt;
+        this.status = status;
+    }
 }
