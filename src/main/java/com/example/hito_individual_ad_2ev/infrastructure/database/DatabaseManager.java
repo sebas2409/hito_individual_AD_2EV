@@ -46,7 +46,7 @@ public class DatabaseManager implements UserDbOperator, TaskDbOperator {
     @Override
     public String createTask(TaskDto task) {
         var formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
-        var user = userRepository.findByEmail(task.user().email())
+        var user = userRepository.findByEmail(task.user())
                 .orElse(null);
         taskRepository.save(new Task(user,
                 task.description(),
