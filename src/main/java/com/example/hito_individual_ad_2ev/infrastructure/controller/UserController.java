@@ -60,5 +60,11 @@ public class UserController {
         return ResponseEntity.ok(rs);
     }
 
+    @DeleteMapping("/deleteTask/{id}")
+    public ResponseEntity<RequestSimpleResponse> deleteTask(@PathVariable int id) {
+        taskRepository.deleteById(id);
+        return ResponseEntity.ok(new RequestSimpleResponse("Tarea eliminada correctamente"));
+    }
+
 
 }
