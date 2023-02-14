@@ -33,7 +33,7 @@ public class Task {
     private LocalDate createdAt;
 
     @ToString.Include
-    @Column(name = "finished_at", nullable = false)
+    @Column(name = "end_at", nullable = false)
     private LocalDate endAt;
 
     @ToString.Include

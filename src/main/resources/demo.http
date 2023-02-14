@@ -2,8 +2,8 @@ POST localhost:8080/api/v1/auth/register
 Content-Type: application/json
 
 {
-  "name": "Victor Sanchez Grande",
-  "email": "victor@gmail.com",
+  "name": "Juan Sebastian Gonzalez",
+  "email": "juan@gmail.com",
   "password": "1234"
 }
 
@@ -12,7 +12,7 @@ POST localhost:8080/api/v1/auth/login
 Content-Type: application/json
 
 {
-  "email": "victor@gmail.com",
+  "email": "juan@gmail.com",
   "password": "1234"
 }
 
@@ -20,3 +20,12 @@ Content-Type: application/json
 GET localhost:8080/api/v1/users/getTasks
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWJhc0BnbWFpbC5jb20iLCJpYXQiOjE2NzYzMTQ4ODYsImV4cCI6MTY3NjQwMTI4Nn0.Iu87RGFhsNEtjfA0bIZFHMuPUe9kJp-rkj0D5atLrqU
+###
+PUT localhost:8080/api/v1/users/changeTaskStatus
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWJhc0BnbWFpbC5jb20iLCJpYXQiOjE2NzYzMTQ4ODYsImV4cCI6MTY3NjQwMTI4Nn0.Iu87RGFhsNEtjfA0bIZFHMuPUe9kJp-rkj0D5atLrqU
+
+{
+  "id": 7,
+  "status": "EN_PROGRESO"
+}

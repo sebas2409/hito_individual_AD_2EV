@@ -2,6 +2,7 @@ package com.example.hito_individual_ad_2ev.infrastructure.database;
 
 import com.example.hito_individual_ad_2ev.application.use_cases.ports.TaskDbOperator;
 import com.example.hito_individual_ad_2ev.application.use_cases.ports.UserDbOperator;
+import com.example.hito_individual_ad_2ev.domain.TaskStatus;
 import com.example.hito_individual_ad_2ev.infrastructure.controller.dto.TaskDto;
 import com.example.hito_individual_ad_2ev.infrastructure.controller.dto.TaskStatusRequest;
 import com.example.hito_individual_ad_2ev.infrastructure.database.entitites.Task;
